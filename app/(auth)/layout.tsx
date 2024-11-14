@@ -5,13 +5,15 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       return (
             <div className='flex min-h-screen'>
                   <section className='lg:flex hidden justify-center items-center w-1/2 xl:w-2/5 p-10 bg-brand-100 '>
-                        <div className='flex flex-col justify-center max-h-[800px] max-w-[450px] space-y-12'>
+                        <div className='flex flex-col justify-center max-h-[800px] max-w-[500px] space-y-12'>
                               <Image
                                     src='/logo.svg'
                                     alt='Logo'
                                     width={223}
                                     height={80}
                                     className='h-auto'
+                                    placeholder='blur'
+                                    blurDataURL='@@'
                               />
                               <div className='space-y-5 text-white'>
                                     <h1 className='h1'>
@@ -27,6 +29,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
                                     width={342}
                                     height={342}
                                     className='h-auto transition-all hover:scale-105 hover:-rotate-2'
+                                    placeholder='blur'
+                                    blurDataURL='@@'
                               />
                         </div>
                   </section>
@@ -38,6 +42,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
                                     width={223}
                                     height={80}
                                     className='h-auto w-[200px] lg:w-[250px]'
+                                    placeholder='blur'
+                                    blurDataURL='@@'
                               />
                         </div>
                         {
